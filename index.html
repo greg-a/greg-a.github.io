@@ -1,42 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contact</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
 
-    <body>        
-        <header> 
-            <div id="heading">
-                <h1 class="heading">Greg Allebach</h1>
-                <nav class="page_links">      
-                    <a href="index.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-            </div>     
-        </header>
-        <br>
-    
-        <div class="main_content" id="contact-main">
-            <h2>Contact</h2>
-        
-            <form action="#">
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" value="John Smith" size="129"><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" value="example@gmail.com" size="50"><br>
-                <label for="message">Message</label><br>
-                <textarea name="message" id="message" cols="120" rows="10"></textarea><br>
-                <input type="submit" value="Submit" id="submit">
-            </form>           
-            
-        <footer>Copyright&#169;</footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/46ae4d5caa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top d-flex pl-5 pr-5">
+        <div class="container">
+            <h4>Greg Allebach</h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="list-group list-group-horizontal-sm collapse navbar-collapse justify-content-end"
+                id="navbarNavAltMarkup" role="tablist">
+                <a class="nav-link active" id="list-home-list" data-toggle="list" href="#list-home" role="tab"
+                    aria-controls="home">About Me</a>
+                <a class="nav-link" id="list-portfolio-list" data-toggle="list" href="#list-portfolio" role="tab"
+                    aria-controls="portfolio">Portfolio</a>
+                <a class="nav-link" id="list-contact-list" data-toggle="list" href="#list-contact" role="tab"
+                    aria-controls="contact">Contact</a>
+            </div>
         </div>
-        <br>
-        <footer>
-            <p id="footer">Copyright&#169;</p>
-        </footer>
-    </body>
+    </nav>
+    <div class="col-12 main-container">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="container justify-content-center">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4>About Me</h4>
+                            <hr>
+                            <div class="text-wrap text-left">
+                                <img class="profile-pic mr-2" src="./assets/img/profile.jpg" alt="profile-image"
+                                    align="left">
+                                <p>Aspiring backend developer fresh out of a full stack (MERN) boot camp. I grew up in
+                                    the suburbs of Philadelphia
+                                    and got my AA in Business Administration from Bucks County Community College. I got
+                                    my first taste in the IT world working as a copier repair technician
+                                    where I got involved in setting up network printing and scanning programs.
+                                    <br><br>
+                                    I started my current job as a purchasing coordinator in 2017 where I became familiar with Excel. Working with data in Excel got me curious about databases
+                                    so I began to dabble in PostgreSQL to find new ways to manage
+                                    the data I was handling. Since joining the full stack boot camp I've been able to
+                                    create multiple web applications that have made my
+                                    data management and analysis much more efficient. I love coming up with my own
+                                    solutions for
+                                    data management and want to continue learning new ways to solve problems!
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="list-portfolio" role="tabpanel" aria-labelledby="list-portfolio-list">
+                <div class="container justify-content-center">
+                    <div class="card main-container">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Portfolio</h4>
+
+                            <div class="row justify-content-center mt-5">
+                                <div class="container col-lg-4 p-0 m-3">
+                                    <img class="project-pic m-0" src="./assets/img/tennis-match.PNG" alt="tennis-match"
+                                        role="button" data-toggle="collapse" href="#tennis-match-collapse"
+                                        aria-expanded="false" aria-controls="tennis-match-collapse">
+                                    <div class="card collapse multi-collapse col-lg" id="tennis-match-collapse">
+                                        <p>
+                                            TennisMatch is an interactive scheduling application that helps players
+                                            to
+                                            schedule tennis matches with other players.
+                                        </p>
+                                        <div class="container d-flex icon-container">
+                                            <a href="https://github.com/greg-a/tennis-match-react" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://tennis-match-react.herokuapp.com/" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Deployed Site">
+                                                <i class="fas fa-play-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container col-lg-4 p-0 m-3">
+                                    <img class="project-pic m-0" src="./assets/img/youjuke.PNG" alt="youjuke"
+                                        role="button" data-toggle="collapse" href="#youjuke-collapse"
+                                        aria-expanded="false" aria-controls="youjuke-collapse">
+                                    <div class="card collapse multi-collapse col-lg" id="youjuke-collapse">
+                                        <p>
+                                            Youjuke is a music forum that allows groups of visitors to compile a shared
+                                            playlist and listen to it together, live.
+                                        </p>
+                                        <div class="container d-flex icon-container">
+                                            <a href="https://youjuke2.herokuapp.com/" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://github.com/greg-a/youjuke2" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Deployed Site">
+                                                <i class="fas fa-play-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="container col-lg-4 p-0 m-3">
+                                    <img class="project-pic m-0" src="./assets/img/vin-decoder.PNG" alt="vin-decoder"
+                                        role="button" data-toggle="collapse" href="#vin-decoder-collapse"
+                                        aria-expanded="false" aria-controls="vin-decoder-collapse">
+                                    <div class="card collapse multi-collapse col-lg" id="vin-decoder-collapse">
+                                        <p>
+                                            Greg's VIN Decoder will take two VINs and show you the differences.
+                                        </p>
+                                        <div class="container d-flex icon-container">
+                                            <a href="https://github.com/greg-a/vin-compare" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://greg-a.github.io/vin-compare/" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Deployed Site">
+                                                <i class="fas fa-play-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container col-lg-4 p-0 m-3">
+                                    <img class="project-pic m-0" src="./assets/img/bookclub.PNG" alt="booksearch"
+                                        role="button" data-toggle="collapse" href="#booksearch-collapse"
+                                        aria-expanded="false" aria-controls="booksearch-collapse">
+                                    <div class="card collapse multi-collapse col-lg" id="booksearch-collapse">
+                                        <p>
+                                            Book Search allows you to search for a books and save them in your library.
+                                        </p>
+                                        <div class="container d-flex icon-container">
+                                            <a href="https://github.com/greg-a/booklibrary" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://google-book-search3212.herokuapp.com/" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Deployed Site">
+                                                <i class="fas fa-play-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="container col-lg-4 p-0 m-3">
+                                    <img class="project-pic m-0" src="./assets/img/scrapedpost.PNG" alt="scraped-post"
+                                        role="button" data-toggle="collapse" href="#scraped-post-collapse"
+                                        aria-expanded="false" aria-controls="scraped-post-collapse">
+                                    <div class="card collapse multi-collapse col-lg" id="scraped-post-collapse">
+                                        <p>
+                                            Scraped Post scrapes the web for the latest news articles and allows you to
+                                            save your comments on each one and view others comments.
+                                        </p>
+                                        <div class="container d-flex icon-container">
+                                            <a href="https://github.com/greg-a/the_scraped_post" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://thescrapedpost.herokuapp.com/" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Deployed Site">
+                                                <i class="fas fa-play-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container col-lg-4 p-0 m-3">
+                                    <img class="project-pic m-0" src="./assets/img/giphy-search.PNG" alt="giphy-search"
+                                        role="button" data-toggle="collapse" href="#giphy-search-collapse"
+                                        aria-expanded="false" aria-controls="giphy-search-collapse">
+                                    <div class="card collapse multi-collapse col-lg" id="giphy-search-collapse">
+                                        <p>
+                                            Giphy Search allows you to create a collection of your favorite gifs.
+                                        </p>
+                                        <div class="container d-flex icon-container">
+                                            <a href="https://github.com/greg-a/giphy-api" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://greg-a.github.io/giphy-api" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Deployed Site">
+                                                <i class="fas fa-play-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="container col-lg-4 p-0 m-3">
+                                    <img class="project-pic m-0" src="./assets/img/triviagame.PNG" alt="trivia-game"
+                                        role="button" data-toggle="collapse" href="#trivia-game-collapse"
+                                        aria-expanded="false" aria-controls="trivia-game-collapse">
+                                    <div class="card collapse multi-collapse col-lg" id="trivia-game-collapse">
+                                        <p>
+                                            Movie Trivia is a quick trivia that shows you pictures after each question
+                                            letting you know if you answered correctly and then shows you a tally at the
+                                            end of the round.
+                                        </p>
+                                        <div class="container d-flex icon-container">
+                                            <a href="https://github.com/greg-a/TriviaGame" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://greg-a.github.io/TriviaGame/" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Deployed Site">
+                                                <i class="fas fa-play-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container col-lg-4 p-0 m-3">
+                                    <img class="project-pic m-0" src="./assets/img/word-guess2.PNG" alt="sixers-hangman"
+                                        role="button" data-toggle="collapse" href="#sixers-hangman-collapse"
+                                        aria-expanded="false" aria-controls="sixers-hangman-collapse">
+                                    <div class="card collapse multi-collapse col-lg" id="sixers-hangman-collapse">
+                                        <p>
+                                            Sixers Word Guess Game requires you to guess a Philadelphia 76ers related
+                                            phrase
+                                            or player name in a limited number of attempts.
+                                        </p>
+                                        <div class="container d-flex icon-container">
+                                            <a href="https://github.com/greg-a/Word_Guess_Game" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Github">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://greg-a.github.io/Word_Guess_Game" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom" title="Deployed Site">
+                                                <i class="fas fa-play-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="list-contact" role="tabpanel" aria-labelledby="list-contact-list">
+                <div class="container justify-content-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>
+                                Feel free to reach out!
+                            </p>
+                            <a href="mailto: greg.allebach@gmail.com">Send Email</a>
+
+                            <div class="text-right mr-5">
+                                <a class="m-3" href="https://www.linkedin.com/in/greg-allebach-175b8685" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Linked In">
+                                    <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                                </a>
+                                <a class="m-3" href="https://github.com/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.project-pic').click(function (e) {
+            $('.collapse').collapse('hide');
+        });
+    </script>
+
+</body>
+
 </html>

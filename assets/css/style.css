@@ -1,0 +1,75 @@
+body {
+    background-image: url("../img/ep_naturalwhite.png");
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+}
+
+i {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.icon-container {
+    justify-content: space-evenly;
+}
+
+.navbar {
+    background-color: rgb(154, 186, 207);
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .active {
+    color: rgb(7, 86, 117);
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 90px;
+}
+
+.project-pic {
+    width: 100%;
+    height: 200px;
+    margin: 15px;    
+    border-radius: 2px; 
+}
+
+.card {
+    /* min-height: 500px;
+    margin-top: 100px; */
+    background-image: url("../img/handmadepaper.png");
+}
+
+.project-pic:hover { 
+    box-shadow: 0 2px 5px 0  
+    rgba(0, 0, 0, 0.5), 0  
+    2px 10px 0 rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.project-details {
+    min-height: 0;
+    margin-top: 0;
+}
+
+.spacer-right {
+    margin-left: 1.8rem;
+}
+
+.spacer-left {
+    margin-right: 1.8rem;
+}
+
+.main-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
